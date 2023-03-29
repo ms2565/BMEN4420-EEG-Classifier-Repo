@@ -1,0 +1,25 @@
+function EEG_Classifier()
+    
+    % Main function to run our Classifier Model
+
+    %% INITIATE PARAMETER STRUCTURE / LOAD AND STORE DATA
+    params = setParams(struct);
+    params.paths.data = which('standard60.loc');
+    params.paths.data = strrep(params.paths.data,'/standard60.loc','');
+    params = loadData(params);
+    
+    %% DATA PREPROCESSING
+    
+    % FILTERING
+
+    % FEATURE SELECTION
+
+    % FEATURE NORMALIZATION (z-scoring
+
+    % FEATURE REDUCTION (PCA, Regularization, etc.)    
+
+    %% CLASSIFICATION (could try SVM, LDA, Naive, Bayes, LR, K-means, Boosting, etc.)
+
+    
+
+end
