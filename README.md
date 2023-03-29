@@ -28,7 +28,7 @@ I think it might be best to come up with a coding system that will make it easy 
 our code pieces and try out different methods/functions/algorithms that we each develop without having
 to rewrite too much code. One of the best ways to do this could be
 
-- Having a *low* threshold for turning multiple lines of code into functions
+- Having a *low* threshold for turning multiple lines of code into functions.
   anything like developing our own filtering pipelines, feature selection/normalizing/reduction algorithms could
   be turned into a function formatted like: '<uni>_briefTitle.m'
   and could be called (for example):
