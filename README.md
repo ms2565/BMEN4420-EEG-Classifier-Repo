@@ -6,7 +6,7 @@ the visual presentation of faces and cars to a user wearing an EEG electrode
 array. This README will see continuous updates over the course of the project.
 
 Getting Started:
-Once you've loaded this repo folder into your favorit matlab working directory,
+Once you've loaded this repo folder into your favorite matlab working directory,
 you should be able to call EEG_Classifier.m as a function in your shell
 
 >> EEG_Classifier()
