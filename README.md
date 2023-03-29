@@ -30,7 +30,7 @@ to rewrite too much code. One of the best ways to do this could be
 
 - Having a *low* threshold for turning multiple lines of code into functions.
   anything like developing our own filtering pipelines, feature selection/normalizing/reduction algorithms could
-  be turned into a function formatted like: '<uni>_briefTitle.m'
+  be turned into a function formatted like: 'yourSchoolUni_briefTitle.m'
   and could be called (for example):
   >> mas2565_PCA(x=data,y=dims);
   
