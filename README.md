@@ -33,3 +33,5 @@ to rewrite too much code. One of the best ways to do this could be
   be turned into a function formatted like: '<uni>_briefTitle.m'
   and could be called (for example):
   >> mas2565_PCA(x=data,y=dims);
+  
+Definitely open to a lot of suggestions here!^^
