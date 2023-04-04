@@ -1,4 +1,4 @@
-function EEG_Classifier()
+function params = EEG_Classifier()
     
     % Main function to run our Classifier Model
 
@@ -25,7 +25,7 @@ function EEG_Classifier()
 
     % FEATURE NORMALIZATION (z-scoring
 
-    % FEATURE REDUCTION (PCA, Regularization, etc.)    
+    % FEATURE REDUCTION (Autoregression, PCA, Regularization, etc.)    
 
     % DATA AUGMENTATION ???
 
