@@ -20,12 +20,12 @@ function params = EEG_Classifier()
     %% DATA PREPROCESSING
     
     % FILTERING (Band-pass, FIR filtering 0.5-40Hz, removal of artifacts - e.g. blinking)
-
+    
     % FEATURE SELECTION
 
     % FEATURE NORMALIZATION (z-scoring
 
-    % FEATURE REDUCTION (PCA, Regularization, etc.)    
+    % FEATURE REDUCTION (Autoregression, PCA, Regularization, etc.)    
 
     % DATA AUGMENTATION ???
 
