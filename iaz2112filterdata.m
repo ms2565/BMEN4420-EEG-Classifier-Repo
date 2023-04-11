@@ -1,4 +1,4 @@
-function filtered_data = filter_eeg(data)
+function filtered_data = iaz2112filterdata(data)
 %FILTER_EEG Applies a highpass filter and a notch filter to remove DC drift,60Hz power line noise, & 120Hz Harmonic of power line.
 % data is a matrix of size (n_channels x n_samples)
 
