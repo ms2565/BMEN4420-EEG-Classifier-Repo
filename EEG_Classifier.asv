@@ -16,11 +16,13 @@ function params = EEG_Classifier()
     sub06 = params.data.sub06;
     sub07 = params.data.sub07;
     sub08 = params.data.sub08;
+    params.numSubjs = 8;
+    params.bagMode = 't'
     
     %% DATA PREPROCESSING
     
     % FILTERING (Band-pass, FIR filtering 0.5-40Hz, removal of artifacts - e.g. blinking)
-    
+
     % FEATURE SELECTION
 
     % FEATURE NORMALIZATION (z-scoring

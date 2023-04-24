@@ -1,0 +1,17 @@
+function mas2565_Bag_A(params)
+    
+    % for each subject
+        % for each model in Class A Bag
+        %% Convert prediction txt files to Y_EEG_TRAIN/TEST formatted outputs
+        y = mas2565_txt2Preds(params, model, subj);
+        y_set = [y_set y];
+    %% AVERAGE OVER ALL MODELS     
+     y_bagged = mas2565_bag(y_set)
+            
+    %% IF TRAIN MODE, EVALUATE ACCURACY / IF TEST MODE - EXPORT PREDICTIONS (FORMAT SPECIFIED)
+    accuracy = mas2565_accuracy(y_bagged, Y_EEG_TRAIN);
+    roc = mas2565_ROC(preds, labels);
+
+    mas2565_expor
+
+end

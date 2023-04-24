@@ -6,4 +6,7 @@ function params = mas2565_orientPaths(params)
     master = strjoin(masterParts,fsep);
     params.paths.stem = master;
     params.paths.ICA = fullfile(params.paths.stem,'ICA_EEG_Data');
+    params.paths.modData = fullfile(params.paths.stem,'Modified Data');
+    params.paths.imputeData = fullfile(params.paths.stem,'Imputed_Data');
+    params.paths.BagA = fullfile(params.paths.stem,'Class_A_Bag');
 end

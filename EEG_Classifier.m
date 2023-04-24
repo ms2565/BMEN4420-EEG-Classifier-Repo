@@ -16,6 +16,9 @@ function params = EEG_Classifier()
     sub06 = params.data.sub06;
     sub07 = params.data.sub07;
     sub08 = params.data.sub08;
+    params.numSubjs = 8;
+    params.bagMode = 'test';
+    
     
     %% DATA PREPROCESSING
     

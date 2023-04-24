@@ -1,0 +1,6 @@
+function mas2565_exportModData(params)
+    modParams = load(fullfile(params.paths.modData,strcat('modified_data.mat')),"params");
+    modData = modParams.params.data;
+    dataFields = fieldnames(modData);
+    for i = 2:length(dataFields)
+end
