@@ -6,6 +6,11 @@ function icaData = mas2565_eeglab(data, params)
         EEG = pop_importdata('dataformat', 'matlab', 'nbchan', size(data.(subj).X_EEG_TRAIN, 1), 'data', data.(subj).X_EEG_TRAIN, 'srate', data.Fs, 'pnts', size(data.(subj).X_EEG_TRAIN, 2));
         EEG = pop_chanedit(EEG,'load', {'standard60.loc' 'filetype' 'autodetect'});
         EEG = pop_runica(EEG,'icatype','runica');
+        %% OPTIONAL VISUALIZATION / COMMENT TOGGLE
+        EEG = pop_selectcomps(EEG,[1:20]);
+        pop_selectcomps(EEG, 'comps', 1:size(EEG.icawinv,2));
+        EEG = pop_subcomp(EEG,find(EEG.reject.gcompreject));
+        %% CONTINUE...
         ICs = eeg_getdatact(EEG, 'component', [1:20]);        
         icaData.(subj).X_EEG_TRAIN = ICs;
 %         icaData.(subj).X_EEG_TEST;

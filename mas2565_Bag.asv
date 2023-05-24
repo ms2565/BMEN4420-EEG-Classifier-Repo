@@ -1,4 +1,4 @@
-function mas2565_Bag(params)
+function Y_final = mas2565_Bag(params)
     numSubjs = params.numSubjs;
     bag_dir = uigetdir();
     params.paths.bag_dir = bag_dir;
@@ -18,15 +18,17 @@ function mas2565_Bag(params)
         end
         %% AVERAGE OVER ALL MODELS     
         y_bagged = mas2565_bagAvg(y_set);
+        y_moded = mas2565_bagMode(y_set);
         switch params.bagMode
             case 'train'
                 Y_EEG_TRAIN = params.data.(subj).Y_EEG_TRAIN;
+%                 [Xcrv, Ycrv, Tcrv, AUC] = perfcurve(y_bagged, Y_EEG_TRAIN, 1);
                 [Xcrv, Ycrv, Tcrv, AUC] = perfcurve(y_bagged, Y_EEG_TRAIN, 1);
                 figure
                 plot(Xcrv, Ycrv);
                 title(strcat(subj,' ; ', num2str(AUC)));
             case 'test'
-
+                Y_final{1,i} = y_bagged;
 %                 mas2565_exportPredictions();
         end
             
